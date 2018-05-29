@@ -1,0 +1,13 @@
+{
+  "linters": {
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js,!docs/**": [
+      "prettier --write",
+      "git add",
+      "eslint --max-warnings=0"
+    ],
+  }
+}
