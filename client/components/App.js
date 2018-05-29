@@ -23,6 +23,8 @@ import WebhookPage from "./pages/WebhookPage";
 
 import actions from "../store/actions";
 
+import LogoImage from "../../public/logo.png";
+
 injectGlobal`
   body {
     overflow: hidden;
@@ -98,7 +100,7 @@ export class App extends Component {
           <Nav role="navigation">
             <Tooltip content="Stride App Starter Kit" position="right">
               <PageTitle>
-                <Logo src="/public/logo.png" />
+                <Logo src={LogoImage} />
               </PageTitle>
             </Tooltip>
             <Menu />
